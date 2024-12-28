@@ -1,0 +1,7 @@
+{
+  "name": "kolaps",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

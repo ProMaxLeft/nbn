@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row *ngFor="let book of books">
+      <ion-col>{{book.Book_name}}</ion-col>
+      <ion-col>{{book.Author}}</ion-col>
+      <ion-button (click)="delete_book(book.Book_name)" >Удалить</ion-button>
+    </ion-row>
+  </ion-grid>
+</ion-content>
